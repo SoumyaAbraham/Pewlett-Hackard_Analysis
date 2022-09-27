@@ -109,3 +109,36 @@ AND (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 ORDER BY e.emp_no
 
 SELECT * FROM mentorship_eligibility
+
+
+--BONUS: The count of eligible mentors for each title:
+
+SELECT count(emp_no), title
+INTO mentorship_count
+FROM mentorship_eligibility
+GROUP BY title
+ORDER BY count(emp_no) DESC
+SELECT * FROM mentorship_count;
+
+ALTER TABLE mentorship_count
+RENAME COLUMN count TO mentor_count;
+
+-- Create new table to show trainee count and mentor count
+--for each title:
+
+SELECT rt.title,
+	rt.count, 
+	mc.mentor_count
+INTO stat
+FROM retiring_titles as rt
+INNER JOIN mentorship_count as mc
+ON rt.title=mc.title
+ORDER BY rt.count
+
+SELECT * FROM stat
+
+ALTER TABLE stat
+RENAME COLUMN count TO trainee_count;
+
+SELECT * from stat
+
