@@ -64,11 +64,11 @@ _ERD is a type of flowchart that highlights different tables and their relations
    
    1. How many roles will need to be filled as the "silver tsunami" begins to make an impact?  
    
-   As per our analysis, there are 72458 employees retiring during the upcoming "silver tsunami".   
+      As per our analysis, there are 72458 employees retiring during the upcoming "silver tsunami".   
    
    2. Are there enough qualified, retirement-ready employees in the department to mentor the next generation of Pewlett Hackard employees?
    
-   Let us take a look at the counts for those retiring and those available for mentorship:  
+      Let us take a look at the counts for those retiring and those available for mentorship:  
    
    ![retiring_title](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/blob/main/Screenshots/retiring_count.png) ![mentorship_count](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/blob/main/Screenshots/eligibility_count.png)  
    
