@@ -25,13 +25,14 @@ _ERD is a type of flowchart that highlights different tables and their relations
    
    There are 133776 rows in all.  
    The csv file can be found here: [retirement_titles](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/blob/main/Data/retirement_titles.csv)  
-   Note emp_no 10004, 10005 and 10009 are repeated with different titles.   
+   Note emp_no 10004, 10005 and 10009 are repeated with different titles. This suggests possible promotions or switching internally to a different            department. 
    
    * To get the unique titles with the most recent titles for each employee:  
     
    ![unique](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/blob/main/Screenshots/unique_titles.png)  
-   You will notice the duplicated emp_nos have been removed and the table now only consists of  unique values per emp_no, based on the most recent title each employee holds.  
-   There are now 72458 currently employed employees that will be retiring soon.  
+   You will notice the duplicated emp_nos have been removed. This table now only consists of the title each employee currently holds.
+   
+   There are now 72458 currently employed employees that will be retiring soon. That is quite the number!  
    The csv file can be found here: [unique_title](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/blob/main/Data/unique_titles.csv)  
    
    * Here is a count of employeed in each title:
@@ -39,24 +40,30 @@ _ERD is a type of flowchart that highlights different tables and their relations
    ![retiring_titles](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/blob/main/Screenshots/retiring_titles.png)  
    
    
-   Notice the number of employees in the 7 titles they can be under.  
+  This table gives us an idea of the number of employees retiring within the 7 titles.
    The csv file can be found here: [retiring_table](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/blob/main/Data/retiring_titles.csv)  
    
 ---
 
   ### DELIVERABLE 2:  
   
-   * Create a table that holds current employees born in the year 1965.  
+   * Create a table that holds current employees born in the *year 1965*.  
     
    ![mentorship_eligibility](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/blob/main/Screenshots/mentorship_eligibility.png)  
     
-   There are 1549 employees that are eligible for the mentorship program. The csv file can be found here: [mentorship_eligibility](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/blob/main/Data/mentorship_eligibility.csv)   
+   There are 1549 employees that are eligible for the mentorship program.   
+   The csv file can be found here: [mentorship_eligibility](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/blob/main/Data/mentorship_eligibility.csv)   
    
-   * As a Bonus, let us find the count of eligible mentors for each title:  
+ ### BONUS! 
+ 
+   * Let us find the count of eligible mentors for each title.  
+   * Let us also create a table to review the expected number of new trainees and eligible mentors available for each title.  
+   The resulting table looks like this:
    
-   ![mentorship_count](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/blob/main/Screenshots/mentorship_count.png)  
+   ![stat](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/blob/main/Screenshots/stat.png)  
    
-   The csv file can be found here: [mentorship_count](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/blob/main/Data/mentorship_count.csv)
+   The csv file for the mentorship_eligibility data can be found here: [mentorship_count](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/blob/main/Data/mentorship_count.csv)  
+   The csv file for the comaparitive analysis data can be found here: [comapre](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/blob/main/Data/stat.csv)
    
 ---   
    
@@ -70,9 +77,9 @@ _ERD is a type of flowchart that highlights different tables and their relations
    
       Let us take a look at the counts for those retiring and those available for mentorship:  
    
-   ![retiring_title](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/blob/main/Screenshots/retiring_count.png) ![mentorship_count](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/blob/main/Screenshots/eligibility_count.png)  
+   ![comparing_titles](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/blob/main/Screenshots/compare.png) 
    
-  For each title, this is the number of eligible mentors : roles needed to be filled:  
+  For each title, this is the ratio of  *eligible mentors : roles needed to be filled* :  
   
   Senior Engineer: 1:153  _This might be an overwhelming number of trainees per mentor_  
   Senior Staff: 1:44 _This seems like a doable amount of trainees per mentor_  
@@ -82,10 +89,11 @@ _ERD is a type of flowchart that highlights different tables and their relations
   Assistant Engineer: 1:14 _This is a very reasonable amount of trainees per mentor_  
   Manager: N/A _There are no managers retiring during the 'Silver Tsunami'_  
   
-  Overall, all titles but Senior Engineer can be easily mentored through the mentorship program.  
+  #### Overall, all titles but Senior Engineer can be easily mentored through the mentorship program.  
   
   ---
   
+  The SQL script for this analysis can be found here: [Employee_Database_challenge.sql](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/blob/main/Employee_Database_challenge.sql).  
   All csv files can be found it [csv_files](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/tree/main/Data)
   
   ---
