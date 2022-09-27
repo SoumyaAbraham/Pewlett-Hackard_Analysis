@@ -11,6 +11,7 @@ _ERD is a type of flowchart that highlights different tables and their relations
   Use [Quick DBD](http://quickdatabasediagrams.com/) to create the ERD.
   
   ![ERD](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/blob/main/Screenshots/EmployeeDB.png)
+  
 ---
 
 ### DELIVERABLE 1:
@@ -40,6 +41,7 @@ _ERD is a type of flowchart that highlights different tables and their relations
    
    Notice the number of employees in the 7 titles they can be under.  
    The csv file can be found here: [retiring_table](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/blob/main/Data/retiring_titles.csv)  
+   
 ---
 
   ### DELIVERABLE 2:  
@@ -55,6 +57,7 @@ _ERD is a type of flowchart that highlights different tables and their relations
    ![mentorship_count](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/blob/main/Screenshots/mentorship_count.png)  
    
    The csv file can be found here: [mentorship_count](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/blob/main/Data/mentorship_count.csv)
+   
 ---   
    
    ## Summary:  
