@@ -35,7 +35,7 @@ _ERD is a type of flowchart that highlights different tables and their relations
    You will notice the duplicated emp_nos have been removed. This table now only consists of the title each employee currently holds. We have also filtered out employess that no longer work at the company.  
    
    There are now 72458 currently employed employees that will be retiring soon. That is quite the number!  
-   The csv file can be found here: [unique_title](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/blob/main/Data/unique_titles.csv)  
+   The csv file can be found here: [unique_titles](https://github.com/SoumyaAbraham/Pewlett-Hackard_Analysis/blob/main/Data/unique_titles.csv)  
    
    * Here is a count of employees in each title:
    
